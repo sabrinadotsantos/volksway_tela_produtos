@@ -15,25 +15,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
+    <script src="./js/script.js" defer></script> <!--adia carregamento do script-->
+
 </head>
 
 <body>
     <header>
         <div class="posicionamento_header">
             <img src="./img/logo_vwco_semfundo_branco.png" alt="">
-            <nav>
-                <a href="">noticias</a>
-                <a href="">quem Somos</a>
-                <a href="">por que a volksway?</a>
-                <a href="">contato</a>
+
+            <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()"> <!-- evento - quando acontecer alguma coisa 'onclick'-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </a>   
+
+            <nav id="menu_links">
+                <a href="#">noticias</a>
+                <a href="#">quem Somos</a>
+                <a href="#">por que a volksway?</a>
+                <a href="#">contato</a>
             </nav>
         </div>
     </header>
-    
+
 
     <main>
-        
-  
+
+
         <h1>Pagina Inicial Volksway</h1>
         <section>
             <div class="banner">
@@ -51,7 +58,7 @@
             <h2 class="h2_especiais">especiais</h2>
         </div>
         <section class="ofertas_especiais">
-            <div class="card_ofertas">
+            <div class="card_ofertas1">
                 <h3>constellation 2023</h3>
                 <h4>24.280 6x2 no chassis</h4>
                 <img src="./img/constelation_cinza.png" alt="">
@@ -60,7 +67,7 @@
                 <a class="btn_card" href="">estou interessado</a>
                 <h6>oferta válida até 31/05/2023</h6>
             </div>
-            <div class="card_ofertas">
+            <div class="card_ofertas2">
                 <h3>constellation 2023</h3>
                 <h4>24.280 6x2 no chassis</h4>
                 <img src="./img/constelation_cinza.png" alt="">
@@ -69,7 +76,7 @@
                 <a class="btn_card" href="">estou interessado</a>
                 <h6>oferta válida até 31/05/2023</h6>
             </div>
-            <div class="card_ofertas">
+            <div class="card_ofertas3">
                 <h3>constellation 2023</h3>
                 <h4>24.280 6x2 no chassis</h4>
                 <img src="./img/constelation_cinza.png" alt="">
@@ -87,7 +94,7 @@
                 nossos parceiros</p>
 
             <div>
-                <div class="card_promo">
+                <div class="card_promo1">
                     <img src="./img/pneu_card.png" alt="">
                     <div class="card_azul">
                         <div class="pneu_preco">R$5000,00</div>
@@ -97,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="card_promo">
+                <div class="card_promo2">
                     <img src="./img/pneu_card.png" alt="">
                     <div class="card_azul">
                         <div class="pneu_preco">R$5000,00</div>
@@ -107,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="card_promo">
+                <div class="card_promo3">
                     <img src="./img/pneu_card.png" alt="">
                     <div class="card_azul">
                         <div class="pneu_preco">R$5000,00</div>
@@ -117,7 +124,7 @@
                     </div>
                 </div>
 
-                <div class="card_promo">
+                <div class="card_promo4">
                     <img src="./img/pneu_card.png" alt="">
                     <div class="card_azul">
                         <div class="pneu_preco">R$5000,00</div>
@@ -127,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="card_promo">
+                <div class="card_promo5">
                     <img src="./img/pneu_card.png" alt="">
                     <div class="card_azul">
                         <div class="pneu_preco">R$5000,00</div>
@@ -155,7 +162,9 @@
                         prevê a criação de uma nova empresa que produzirá caminhões pesados com tecnologia avançada e
                         com foco em veículos elétricos.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <a class="btn_noticias" href="">ver mais</a>
+                    </div>
                 </div>
             </div>
 
@@ -168,7 +177,9 @@
                         prevê a criação de uma nova empresa que produzirá caminhões pesados com tecnologia avançada e
                         com foco em veículos elétricos.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <a class="btn_noticias" href="">ver mais</a>
+                    </div>
                 </div>
             </div>
 
@@ -181,7 +192,9 @@
                         prevê a criação de uma nova empresa que produzirá caminhões pesados com tecnologia avançada e
                         com foco em veículos elétricos.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <a class="btn_noticias" href="">ver mais</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,7 +209,11 @@
                         prevê a criação de uma nova empresa que produzirá caminhões pesados com tecnologia avançada e
                         com foco em veículos elétricos.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <div>
+                            <a class="btn_noticias" href="">ver mais</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card_noticias">
@@ -208,7 +225,9 @@
                         autonomia de até 100 milhas (cerca de 160 km) com uma única carga. O veículo possui tecnologia
                         regenerativa de freio, que ajuda a recarregar as baterias enquanto o motorista está freando.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <a class="btn_noticias" href="">ver mais</a>
+                    </div>
                 </div>
             </div>
 
@@ -221,7 +240,9 @@
                         autonomia de até 100 milhas (cerca de 160 km) com uma única carga. O veículo possui tecnologia
                         regenerativa de freio, que ajuda a recarregar as baterias enquanto o motorista está freando.
                     </p>
-                    <a class="btn_noticias" href="">ver mais</a>
+                    <div>
+                        <a class="btn_noticias" href="">ver mais</a>
+                    </div>
                 </div>
             </div>
         </section>
